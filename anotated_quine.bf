@@ -9,7 +9,7 @@
 { go to start of tape }
 <<<[<<<]
 
-{ print initial >>>> }
+{ print initial >>> }
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++...[-]
 
 {  go to start of code on tape }
@@ -17,8 +17,8 @@
 
 { to print the BIG line, in a loop over tape: 
     1. put '+' in 2nd subcell
-    2. print '+' (N times, ord of char), copy N to subcells 3 and 4
-    3. change '+' to '>', print 4 times
+    2. print '+' (N times, ord of char), copy N to subcell 3
+    3. change '+' to '>', print 3 times
     4. go to next cell }
 [
     >+++++++++++++++++++++++++++++++++++++++++++<
