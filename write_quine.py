@@ -20,8 +20,8 @@ code = re.sub(r'\s+', '', code)
 code = ''.join(c for c in code if c in BF_CHARS)
 
 # generate bigline
-bigline = ''.join("+" * ord(c) + ">>>>" for c in code)
+bigline = ''.join("+" * ord(c) + ">>>" for c in code)
 
 # write final quine with no whitespace or newlines
 with open("quine.bf", "w") as f:
-    f.write(">>>>" + bigline + code + '\n')
+    f.write(">>>" + bigline + code + '\n')
